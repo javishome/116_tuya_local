@@ -1,0 +1,12 @@
+image: node:14
+
+pipelines:
+    branches:
+        main:
+            - step:
+                  script:
+                   - git push --all git@github.com:javishome/116_tuya_local.git
+        dev:
+            - step:
+                  script:
+                    - git push --all git@github.com:javishome/116_tuya_local.git
